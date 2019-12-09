@@ -7,7 +7,7 @@ import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
 // import ImageUpload from "./imgPicker";
-import ImageUpload from './Test/ImageUpload'
+import ImageUpload from "./Test/ImageUpload";
 import ImageList from "./ImageList";
 
 function TabPanel(props) {
@@ -71,12 +71,10 @@ export default function SimpleTabs() {
         </Tabs>
       </AppBar>
       <TabPanel value={value} index={0}>
-        {/* <ImageUpload /> */}
-        <ImageList />
+        <ImageUpload />
       </TabPanel>
       <TabPanel value={value} index={1}>
-        {/* <ImageList /> */}
-        <ImageUpload/>
+        <ImageList />
       </TabPanel>
       <TabPanel value={value} index={2}>
         Item Three
